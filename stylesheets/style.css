@@ -1,0 +1,15 @@
+@import 'reset.css';
+@import 'content.css';
+@import 'responsive.css';
+@font-face {
+    font-family: "MultiTypePixel Regular";
+    src: url("../fonts/MultiTypePixel Regular.otf")
+}
+@font-face {
+    font-family: "NeutralFace";
+    src: url("../fonts/NeutralFace.otf")
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat.ttf")
+}

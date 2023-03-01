@@ -1,0 +1,556 @@
+html {
+  background: black;
+}
+strong {font-family: "MultiTypePixel Regular"}
+p {font-family: "NeutralFace"}
+h6 {font-family: "Montserrat"}
+em {color: #FF4B00}
+.poster {
+  position: relative;
+  overflow: hidden;
+  background: black;
+}
+.firefighter {
+  position: absolute;
+  top: 15px;
+  left: 655px;
+  transform: scale(0.8);
+  animation: move1 2.5s 1 ease-out;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+  z-index: 16;
+}
+.lines0, .lines00, .lines000 {
+  position: absolute;
+  top: -423px;
+  left: -610px;
+  transform: scale(0.6) rotate(3deg);
+  z-index: 13;
+  animation: mov2 0.1s infinite linear;
+}
+ .lines00, .lines000 {
+   top: -513px;
+   left: -186px;
+   transform: scale(0.5) rotate(5deg);
+   animation: mov3 0.1s infinite linear;
+   }
+   .lines000 {transform: scale(0.5) rotate(203deg);}
+
+   @keyframes mov2 {
+     0% {left: -610px;}
+     100% {left: -613px;}
+   }
+@keyframes mov3 {
+  0% {left: -1361px;}
+  100% {left: -1363px;}
+}
+@keyframes move1 {
+  0% {left: 655px;}
+  100% {left: 1255px;}
+}
+.line1, .line2, .two, .twohalf2, .three, .five, .textall {display: flex;}
+.line1black {
+  width: 79.9%;
+  height: 80px;
+  background: black;
+  overflow: hidden;
+}
+
+.firtstext, .lasttext {
+  margin-top: 21px;
+  margin-left: 29px;
+  color: white;
+  font-size: 36px;
+  letter-spacing: 0.28em;
+  white-space: nowrap;
+  animation: text-move 2s infinite linear;
+}
+.firtstext:hover{color: #FF4B00;}
+@keyframes text-move {
+  0% {transform: translateX(0)}
+  100% {transform: translateX(-1091px)}
+}
+@keyframes text-move1 {
+  0% {transform: translateX(0)}
+  100% {transform: translateX(-1157px)}
+}
+.line1block1 {
+  width: 33.3%;
+  height: 80px;
+  background: #FF4B00;
+  overflow: hidden;
+}
+.line1block2, .line2block2 {
+  width: 33.3%;
+  height: 80px;
+  background: black;
+  background: url('images/cross.svg');
+  background-size: 100% 93%;
+  background-position: bottom;
+  animation: cross-change 0.5s steps(1) infinite;
+  animation-play-state: paused;
+  background-color: black;
+}
+.block {
+  width: 20.1%;
+  display: flex;
+  flex-direction: row;
+  background: #3E3E3E;
+}
+.line1block2:hover {animation-play-state: running;}
+.line2block2:hover {animation-play-state: running;}
+.line1block3 {
+  position: relative;
+  width: 33.3%;
+  height: 80px;
+  background: #3E3E3E;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ctrl, .ctrl1, .ctrl2 {
+  position: relative;
+  width: 100%;
+  line-height: 55%;
+  font-size: 33px;
+  color: white;
+  letter-spacing: normal;
+}
+.ctrl:hover, .ctrl1:hover, .ctrl2:hover {
+  text-align: center;
+  letter-spacing: -0.29em;
+  transition: all .3s ease-out;
+}
+.ctrl {
+  animation: ctrl-change 0.5s steps(1) infinite;
+  animation-play-state: running;
+}
+@keyframes ctrl-change {
+  0% {color: white;}
+  50% {color: #FF4B00;}
+}
+.ctrl1 {
+  animation: ctrl-change 1s steps(1) infinite;
+  animation-play-state: running;
+}
+@keyframes ctrl-change {
+  0% {color: #FF4B00;}
+  50% {color: white;}
+}
+.ctrl2 {
+  animation: ctrl-change 0.3s steps(1) infinite;
+  animation-play-state: running;
+}
+@keyframes ctrl-change {
+  0% {color: #FF4B00;}
+  50% {color: white;}
+}
+.line2big {
+  width: 79.9%;
+  height: 580px;
+  background: black;
+  overflow: hidden;
+}
+.ctrlbig {
+  line-height: 50%;
+  font-size: 775px;
+  color: white;
+}
+.ctrlbig:active {
+  color: #FF4B00;
+  transition: all .2s ease-out;
+}
+.textall {
+  animation: big-move 10s linear infinite;
+  animation-play-state: running;
+}
+@keyframes big-move {
+  0% {transform: translateX(0)}
+  100% {transform: translateX(-2019px)}
+}
+.textsmall {
+  position: relative;
+  top: -456px;
+  left: 299px;
+  letter-spacing: 0.1em;
+  font-size: 10px;
+  color: white;
+  display: flex;
+}
+.coord2 {
+  position: relative;
+  top: 259px;
+  left: 144px;
+}
+.date1 {
+  position: relative;
+  top: -31px;
+  left: 587px;
+}
+.coord3 {
+  position: relative;
+  top: 149px;
+  left: 768px;
+}
+.coord4 {
+  position: relative;
+  top: -125px;
+  left: 1255px;
+}
+.date2 {
+  position: relative;
+  top: 305px;
+  left: 1398px;
+}
+.line2small {
+  width: 20.1%;
+  height: 580px;
+  background: #3E3E3E;
+}
+.twobig1 {
+  width: 50%;
+  height: 520px;
+  background: #FF4B00;
+}
+.twobig2 {
+  width: 50%;
+  height: 520px;
+  background: white;
+}
+.twohalf1 {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background: white;
+  overflow: hidden;
+}
+.twohalf2 {
+  width: 100%;
+  height: 50%;
+  background: white;
+}
+.part1, .part2, .part3, .part4, .part5, .part6, .part7 {
+  width: calc(100% / 7);
+  height: 100%;
+  overflow: hidden;
+}
+.part2, .part7 {  background: white;}
+.part3, .part6 {  background: black;}
+.part4 {  background: #FF4B00;}
+.part1, .part5 {  background: #3E3E3E;}
+.p1, .p2, .p3, .p4, .p50, .p55, .p6, .p7 {
+  transform: rotate(90deg);
+  position: relative;
+}
+.p1 {
+  top: 132px;
+  margin-left: -160px;
+  animation: anim 1s linear infinite;
+  animation-play-state: running;
+}
+@keyframes anim {
+  0% {top: 132px}
+  100% {top: 32px}
+}
+.p2 {
+  top: 144px;
+  left: -157px;
+  animation: anim2 0.3s linear infinite;
+  animation-play-state: running;
+}
+@keyframes anim2 {
+  0% {top: 144px}
+  100% {top: 40px}
+}
+.p3 {
+  transform: scale(0.7);
+  top: -215px;
+  left: -441px;
+  animation: anim3 0.6s linear infinite;
+  animation-play-state: running;
+}
+@keyframes anim3 {
+  0% {top:-215px}
+  100% {top: -310px}
+}
+.p4 {
+  top: -200px;
+  left: -731px;
+  animation: anim4 0.4s linear infinite;
+  animation-play-state: running;
+}
+@keyframes anim4 {
+  0% {top: -200px}
+  100% {top: -62px}
+}
+.p50 {
+  top: -50px;
+  left: -286px;
+  animation: anim50 1.6s linear infinite;
+  animation-play-state: running;
+}
+@keyframes anim50 {
+  0% {top: -50px}
+  100% {top: 134px}
+}
+.p55 {
+  top: 235px;
+  left: -246px;
+  animation: anim55 1.6s linear infinite;
+  animation-play-state: running;
+}
+@keyframes anim55 {
+  0% {top: 235px}
+  100% {top: 51px}
+}
+.p6 {
+  top: -293px;
+  left: -521px;
+  animation: anim6 0.6s linear infinite;
+  animation-play-state: running;
+}
+@keyframes anim6 {
+  0% {top: -293px}
+  100% {top: -154px}
+}
+.p7 {
+  transform: scale(0.9) rotate(90deg);
+  top: -49px;
+  left: -247px;
+  animation: anim7 2s linear infinite;
+  animation-play-state: running;
+}
+@keyframes anim7 {
+  0% {top: -49px}
+  100% {top: 127px}
+}
+.newline {
+  width: 100%;
+  height: 150px;
+  background: black;
+  overflow: hidden;
+}
+.newline1 {
+  width: 100%;
+  height: 150px;
+  background: #FF4B00;
+  overflow: hidden;
+}
+.newtext, .newtext1 {
+  position: relative;
+  top: 34px;
+  left: 0px;
+  animation: new 4s linear infinite;
+  animation-play-state: running;
+}
+.newtext1 {margin-left: -519px;}
+.newtext:hover, .newtext1:hover  {animation-play-state: paused;}
+@keyframes new {
+  0% {left: 91px}
+  100% {left: -1453px}
+}
+
+.three {
+  overflow: hidden;
+}
+.three1, .three2, .three3 {
+  width: calc(100% / 3);
+  height: 400px;
+}
+.three1 {  background: #3E3E3E; overflow: hidden; }
+.three1:hover {background: #FF4B00; transition: all .2s ease-out;}
+.three2 {  background: white; overflow: hidden;}
+.three3 {  position: relative; background: black; overflow: hidden;}
+.control3 {
+  position: relative;
+  left: 0px;
+  height: 100%;
+  animation: control 3s linear infinite;
+  animation-play-state: paused;
+}
+.control3:hover {animation-play-state: running;}
+@keyframes control {
+  0% {left: -400px}
+  100% {left: -2821px}
+}
+.threetext {
+  position: relative;
+  width: 82%;
+  left: 39px;
+  top: 40px;
+  font-size: 13.5px;
+  line-height: 16px;
+  color: black;
+}
+.photo2 {
+  position: relative;
+  width: 220%;
+  left: -123px;
+  top: -458px;
+  z-index: 10;
+  transition: all 1s ease-out;
+}
+.photo2:hover {
+  top: -200px;
+}
+
+.print {
+  position: absolute;
+  top: 0px;
+  left: -68px;
+  animation: print 0.2s linear 7;
+  animation-delay: 0;
+}
+
+.four {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background: black;
+  z-index: 11;
+  overflow: hidden;
+}
+.waves {
+  position: absolute;
+  width: 100%;
+}
+.five {width: 100%; z-index: 12;}
+.line2black {
+  width: 79.9%;
+  height: 80px;
+  background: black;
+}
+.line2black:hover {
+  background: #FF4B00;
+  transition: all .2s ease-out;
+}
+.line2block1 {
+  width: 33.3%;
+  height: 80px;
+  background: #3E3E3E;
+}
+
+.line2block3 {
+  width: 33.3%;
+  height: 80px;
+  background: black;
+}
+.lines {
+  position: relative;
+  margin-top: -240px;
+  margin-left: -80px;
+  animation: lines-move 0.6s linear infinite;
+  animation-play-state: running;
+}
+.lines:hover {
+  animation-play-state: paused;
+}
+@keyframes lines-move {
+  0% {left: 0px;}
+  100% {left: 71px;}
+}
+@keyframes cross-change {
+  0% {background-image: url('../images/cross.svg');}
+  0.01% {background-image: url('../images/cross2.svg');}
+  50% {background-image: url('../images/cross1.svg');}
+}
+.line2smallgrey {
+  width: 13.4%;
+  height: 580px;
+  background: #3E3E3E;
+  overflow: hidden;
+}
+.line2smallblack {
+  width: 6.7%;
+  height: 580px;
+  background: black;
+  overflow: hidden;
+}
+.l1, .l2, .l3, .l4 {transform: scale(1.15);}
+
+.line2smallgrey {
+  display: flex;
+  justify-content: space-between;
+}
+.l1, .l2, .l3, .l4 {
+  animation: l-move 0.3s ease-out infinite;
+  animation-play-state: paused;
+}
+.l3, .l4 {
+  position: relative;
+  margin-top: 9px;
+}
+.l1:hover, .l2:hover, .l3:hover, .l4:hover {animation-play-state: running;}
+@keyframes l-move {
+  0% {transform: scale(1.15);}
+  50% {transform: scale(1);}
+  100% {transform: scale(1.15);}
+}
+
+.bigl {
+  width: 100%;
+  animation: bigl-move 1.2s infinite linear;
+}
+@keyframes bigl-move {
+0% {transform: translateY(0)}
+100% {transform: translateY(-94px)}
+}
+
+.twobig1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.circle {
+  position: sticky;
+  animation: circlee 2.5s infinite ease-out;
+}
+@keyframes circlee {
+0% {transform: translate(177px, -95px)}
+20% {transform: translate(-257px, 102px)}
+40% {transform: translate(-463px, -207px)}
+80% {transform: translate(240px, 233px)}
+100% {transform: translate(177px, -95px);}
+}
+
+.txt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.virt, .virt1, .virt2, .virt3, .virt4 {
+  position: relative;
+  margin-top: 11px;
+  left: auto;
+  color: white;
+  font-size: 27px;
+  line-height: 112%;
+  letter-spacing: 0.1em;
+  display: flex;
+  justify-content: center;
+}
+.virt {left: -174px;}
+.virt1 {left: -87px; z-index: 2;}
+.virt3 {left: 87px; z-index: 3;}
+.virt4 {left: 174px;}
+
+.twotext {
+  position: relative;
+  width: 78%;
+  height: 180px;
+  left: 39px;
+  bottom: -29px;
+  font-size: 13.5px;
+  line-height: 16px;
+  color: black;
+  z-index: 14;
+}
+.twotext:hover {
+  width: 90%;
+  line-height: 22px;
+  letter-spacing: 0.0125em;
+  transition: all .5s ease-out;
+}
+.line2black, .line2block1, .line2block2, .line2block3 {overflow: hidden;}

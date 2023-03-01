@@ -1,0 +1,444 @@
+@media only screen and (min-width: 1280px) {
+  .poster {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    max-width: 1280px
+  }
+}  /* Desktop */
+
+@media only screen and (min-width: 1024px) {
+  .poster {width: 100%;}
+  .line1 {flex-direction: row;}
+  .block {display: flex; flex-direction: row;}
+}  /* Laptop */
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) {
+  .line1 {flex-direction: row;}
+  .block {display: flex; flex-direction: row;}
+}  /* iPad */
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .block {display: flex; flex-direction: row; width: 25%;}
+  .line1black {width: 75%;}
+  .line1black {width: 75%;}
+  .line2big {width: 75%; height: 1080px;}
+  .line2smallgrey {width: 16.6%; height: 880px;}
+  .line2smallblack {width: 8.3%; height: 880px;}
+  .textbigsmall, .textbigsmall1 {
+    position: relative;
+    transform-origin: 0% 0% 0;
+    transform: rotate(-90deg) scale(1.1);
+    margin-left: auto;
+    margin-top: 1600px;
+  }
+  .bigl {
+    animation: bigl-move 0.3s infinite linear;
+}
+  @keyframes bigl-move {
+  0% {transform: translateY(0)}
+  100% {transform: translateY(-78px)}
+  }
+  .l1, .l2, .l3, .l4 {
+    display: none;
+  }
+  .textall {
+    animation: big-move 10s linear infinite;
+    animation-play-state: running;
+    flex-direction: column;
+  }
+  @keyframes big-move {
+    0% {transform: translateY(-2496px)}
+    100% {transform: translateY(-293px)}
+  }
+  .threetext {
+    font-size: 12.5px;
+    line-height: 15px;
+  }
+  .part1, .part2, .part3, .part4, .part5, .part6, .part7 {
+    width: 217px;
+    height: 74.5px;
+  }
+    .virt {
+      left: -158px;
+  }
+    .virt4 {
+      left: 158px;
+    }
+    .two {flex-direction: row-reverse;}
+    .twohalf1 {display: none;}
+    .twohalf2 {
+      flex-direction: column;
+      width: 50%;
+      height: 100%;
+    }
+    .twobig1 {width: 100%;}
+    .twobig2 {width: 233px;}
+    .p1, .p2, .p3, .p4, .p50, .p55, .p6, .p7 {
+      transform: rotate(0deg);
+    }
+    .p1 {
+      top: -8px;
+      left: 6px;
+      animation: anim 0.5s linear infinite;
+      animation-play-state: running;
+    }
+    @keyframes anim {
+      0% {left: 6px;}
+      100% {left: 180px;}
+    }
+    .p2 {
+      top: -20px;
+      left: -102px;
+      animation: anim2 0.5s linear infinite;
+      animation-play-state: running;
+    }
+    @keyframes anim2 {
+      0% {left: -102px;}
+      100% {left: 7px;}
+    }
+    .p3 {
+      transform: scale(0.7);
+      top: -505px;
+      left: -340px;
+      animation: anim3 0.6s linear infinite;
+      animation-play-state: running;
+    }
+    @keyframes anim3 {
+      0% {left: -340px;}
+      100% {left: -470px;}
+    }
+    .p4 {
+      top: -200px;
+      left: -656px;
+      animation: anim4 1.2s linear infinite;
+      animation-play-state: running;
+    }
+    @keyframes anim4 {
+      0% {left: -656px;}
+      100% {left: -521px;}
+    }
+    .p50 {
+      top: 0px;
+      left: -346px;
+      animation: anim50 1.6s linear infinite;
+      animation-play-state: running;
+    }
+    @keyframes anim50 {
+      0% {left: -346px;}
+      100% {left: 10px;}
+    }
+    .p55 {
+      top: -19px;
+      left: -209px;
+      animation: anim55 1.6s linear infinite;
+      animation-play-state: running;
+    }
+    @keyframes anim55 {
+      0% {left: -39px;}
+      100% {left: -395px;}
+    }
+    .p6 {
+      top: -293px;
+      left: -521px;
+      animation: anim6 0.6s linear infinite;
+      animation-play-state: running;
+    }
+    @keyframes anim6 {
+      0% {left: -459px;}
+      100% {left: -274px;}
+    }
+    .p7 {
+      transform: scale(0.8);
+      top: -11px;
+      left: 247px;
+      animation: anim7 2s linear infinite;
+      animation-play-state: running;
+    }
+    @keyframes anim7 {
+      0% {left: -75px;}
+      100% {left: -306px;}
+    }
+    .line1 {flex-direction: row;}
+    .block {display: flex; flex-direction: row;}
+
+element.style {
+}
+.firefighter {
+    top: 205px;
+    left: 355px;
+    transform: scale(0.9);
+}
+@keyframes move1 {
+  0% {left: 355px;}
+  100% {left: 855px;}
+}
+}  /* iPad Portrait */
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .firefighter {
+      top: -146px;
+      left: 550px;
+      transform: scale(0.6);
+  }
+  @keyframes move1 {
+    0% {left: 550px;}
+    100% {left: 1018px;}
+  }
+  .part1, .part2, .part3, .part4, .part5, .part6, .part7 {
+    width: 217px;
+    height: 74.5px;
+  }
+  .virt {
+    left: -257px;
+}
+  .virt4 {
+    left: 257px;
+  }
+  .l1, .l2, .l3, .l4 {
+    display: none;
+  }
+  .threetext {
+    font-size: 12.5px;
+    line-height: 15px;
+  }
+  .two {flex-direction: row-reverse;}
+  .twohalf1 {display: none;}
+  .twohalf2 {
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+  }
+  .twobig1 {width: 100%;}
+  .twobig2 {width: 233px;}
+  .p1, .p2, .p3, .p4, .p50, .p55, .p6, .p7 {
+    transform: rotate(0deg);
+  }
+  .p1 {
+    top: -8px;
+    left: 6px;
+    animation: anim 0.5s linear infinite;
+    animation-play-state: running;
+  }
+  @keyframes anim {
+    0% {left: 6px;}
+    100% {left: 180px;}
+  }
+  .p2 {
+    top: -20px;
+    left: -102px;
+    animation: anim2 0.5s linear infinite;
+    animation-play-state: running;
+  }
+  @keyframes anim2 {
+    0% {left: -102px;}
+    100% {left: 7px;}
+  }
+  .p3 {
+    transform: scale(0.7);
+    top: -505px;
+    left: -340px;
+    animation: anim3 0.6s linear infinite;
+    animation-play-state: running;
+  }
+  @keyframes anim3 {
+    0% {left: -340px;}
+    100% {left: -470px;}
+  }
+  .p4 {
+    top: -200px;
+    left: -656px;
+    animation: anim4 1.2s linear infinite;
+    animation-play-state: running;
+  }
+  @keyframes anim4 {
+    0% {left: -656px;}
+    100% {left: -521px;}
+  }
+  .p50 {
+    top: 0px;
+    left: -346px;
+    animation: anim50 1.6s linear infinite;
+    animation-play-state: running;
+  }
+  @keyframes anim50 {
+    0% {left: -346px;}
+    100% {left: 10px;}
+  }
+  .p55 {
+    top: -19px;
+    left: -209px;
+    animation: anim55 1.6s linear infinite;
+    animation-play-state: running;
+  }
+  @keyframes anim55 {
+    0% {left: -39px;}
+    100% {left: -395px;}
+  }
+  .p6 {
+    top: -293px;
+    left: -521px;
+    animation: anim6 0.6s linear infinite;
+    animation-play-state: running;
+  }
+  @keyframes anim6 {
+    0% {left: -459px;}
+    100% {left: -274px;}
+  }
+  .p7 {
+    transform: scale(0.8);
+    top: -11px;
+    left: 247px;
+    animation: anim7 2s linear infinite;
+    animation-play-state: running;
+  }
+  @keyframes anim7 {
+    0% {left: -75px;}
+    100% {left: -306px;}
+  }
+  .line1 {flex-direction: row;}
+  .block {display: flex; flex-direction: row;}
+
+}  /* iPad Landscape */
+
+@media only screen and (min-device-width: 1px) and (max-device-width: 600px) {
+  .threetext {
+    font-size: 13.5px;
+    line-height: 15px;
+  }
+  .line1 {flex-direction: column;}
+  .five {flex-direction: column;}
+  .block {display: flex; flex-direction: row; width: 100%;}
+  .line1block1, .line1block2, .line1block3, .line2block1, .line2block2, .line2block3 {
+    height: 149px;
+  }
+  .ctrl, .ctrl1, .ctrl2 {
+    font-size: 60px;
+  }
+  .line1black, .line2black {
+    width: 100%;
+    height: 40px;
+  }
+  .firtstext, .lasttext {
+    margin-top: 10px;
+    margin-left: 29px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.28em;
+    white-space: nowrap;
+    animation: text-move 2s infinite linear;
+  }
+  @keyframes text-move {
+    0% {transform: translateX(0)}
+    100% {transform: translateX(-608px)}
+  }
+  .lasttext {animation: text-move1 2s infinite linear;}
+  @keyframes text-move1 {
+    0% {transform: translateX(0)}
+    100% {transform: translateX(-1157px)}
+  }
+  .lines {
+    transform: rotate(90deg) scale(1.5);
+    animation: lines-move 0.2s linear infinite;
+    margin-left: -44px;
+  }
+  @keyframes lines-move {
+    0% {top: -52px;}
+    100% {top: 8px;}
+  }
+  .line2big {width: 75%; height: 650px;}
+  .line2smallgrey {width: 16.6%; height: 500px;}
+  .line2smallblack {width: 8.3%; height: 500px;}
+  .textbigsmall, .textbigsmall1 {
+    position: relative;
+    transform-origin: 0% 0% 0;
+    transform: rotate(-90deg) scale(0.65);
+    margin-left: auto;
+    margin-top: 714px;
+  }
+  .bigl {
+    animation: bigl-move 0.3s infinite linear;
+}
+  @keyframes bigl-move {
+  0% {transform: translateY(0)}
+  100% {transform: translateY(-89px)}
+  }
+  .l1, .l2, .l3, .l4 {
+    display: none;
+  }
+  .textall {
+    animation: big-move 8s linear infinite;
+    animation-play-state: running;
+    flex-direction: column;
+  }
+  @keyframes big-move {
+    0% {transform: translateY(-1251px)}
+    100% {transform: translateY(66px)}
+  }
+  .threetext {
+    font-size: 12.5px;
+    line-height: 15px;
+  }
+  .part1, .part2, .part3, .part4, .part5, .part6, .part7 {
+    width: 217px;
+    height: 74.5px;
+  }
+    .virt {
+      left: -158px;
+  }
+    .virt4 {
+      left: 158px;
+    }
+    .two {flex-direction: column;}
+    .twohalf1 {display: none; width: 100%;}
+    .twohalf2 {
+      width: 100%;
+      height: 223px;
+    }
+    .twobig1 {width: 100%;}
+    .twobig2 {width: 100%; height: 223px;}
+    .part1, .part2, .part3, .part4, .part5, .part6, .part7 {
+    height: 223px;
+}
+.three {flex-direction: column;}
+.three1, .three2, .three3 {
+  width: 100%;
+}
+.three3 {
+  z-index: 20;
+}
+.three2 {
+  height: 570px;
+}
+.four {
+    height: 428px;
+}
+.photo2 {
+    width: 200%;
+    left: -123px;
+    top: -397px;
+    transition: all 1s ease-out;
+}
+.threetext {
+    font-size: 17.5px;
+    line-height: 22px;
+}
+.firefighter {
+    top: 34px;
+    left: 61px;
+    transform: scale(0.6);
+}
+@keyframes move1 {
+  0% {left: 61px;}
+  100% {left: 420px;}
+}
+.twobig1 {
+  height: 317px;
+}
+.virt, .virt4 {display: none}
+@keyframes text-move1 {
+  0% {transform: translateX(-113px)}
+  100% {transform: translateX(-756px)}
+}
+}  /* iPhone */
